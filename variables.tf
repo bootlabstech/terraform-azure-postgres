@@ -8,7 +8,7 @@ variable "location" {
   description = "location of the resource group"
 }
 
-variable "name" {
+variable "postgres_name" {
   type        = string
   description = "name of the azurerm_postgresql_server"
 }
@@ -21,4 +21,9 @@ variable "administrator_login" {
 variable "administrator_login_password" {
   type        = string
   description = "password of the azurerm_postgresql_server"
+}
+
+variable "postgresql-db_name" {
+  type        = string
+  description = "name of the azurerm_postgresql_database"
 }
