@@ -6,10 +6,10 @@ resource "azurerm_postgresql_server" "postgres" {
   administrator_login          = var.administrator_login
   administrator_login_password = var.administrator_login_password
 
-  sku_name   = var.sku_name
-  version    = var.version
-  storage_mb = var.storage_mb
-
+  sku_name   = "GP_Gen5_4"
+  version    = "11"
+  storage_mb = 640000
+  
   backup_retention_days        = 7
   geo_redundant_backup_enabled = true
   auto_grow_enabled            = true
