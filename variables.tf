@@ -39,10 +39,9 @@ variable "storage_mb" {
 }
 
 variable "postgresql_version" {
-  type = string
+  type        = string
   description = "The version of the postgressql"
 }
-
 
 
 
