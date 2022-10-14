@@ -38,7 +38,7 @@ variable "storage_mb" {
   description = "Max storage allowed for a server.values are between 5120 MB(5GB) and 1048576 MB(1TB) for the Basic SKU and between 5120 MB(5GB) and 16777216 MB(16TB) for General Purpose/Memory Optimized SKUs. For more information see the product documentation."
 }
 
-variable "version" {
+variable "postgresql_version" {
   type = string
   description = "The version of the postgressql"
 }
