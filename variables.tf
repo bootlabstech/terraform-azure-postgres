@@ -8,9 +8,9 @@ variable "location" {
   description = "location of the resource group"
 }
 
-variable "postgres_name" {
+variable "name" {
   type        = string
-  description = "name of the azurerm_postgresql_server"
+  description = "Name of the postgresql_server"
 }
 
 variable "administrator_login" {
@@ -27,3 +27,23 @@ variable "postgresql-db_name" {
   type        = string
   description = "name of the azurerm_postgresql_database"
 }
+
+variable "sku_name" {
+  type        = string
+  description = "The name of the SKU, follows the tier + family + cores pattern (e.g. B_Gen4_1, GP_Gen5_8)"
+}
+
+variable "storage_mb" {
+  type        = string
+  description = "Max storage allowed for a server.values are between 5120 MB(5GB) and 1048576 MB(1TB) for the Basic SKU and between 5120 MB(5GB) and 16777216 MB(16TB) for General Purpose/Memory Optimized SKUs. For more information see the product documentation."
+}
+
+
+
+
+
+
+
+
+
+
