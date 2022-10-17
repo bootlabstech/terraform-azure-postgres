@@ -23,11 +23,6 @@ variable "administrator_login_password" {
   description = "password of the azurerm_postgresql_server"
 }
 
-variable "postgresql-db_name" {
-  type        = string
-  description = "name of the azurerm_postgresql_database"
-}
-
 variable "sku_name" {
   type        = string
   description = "The name of the SKU, follows the tier + family + cores pattern (e.g. B_Gen4_1, GP_Gen5_8)"
