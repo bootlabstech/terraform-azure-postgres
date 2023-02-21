@@ -14,5 +14,4 @@ resource "azurerm_postgresql_server" "postgresql_server" {
   ssl_enforcement_enabled           = true
   ssl_minimal_tls_version_enforced  = "TLS1_2"
   infrastructure_encryption_enabled = true
-  
 }
