@@ -48,5 +48,5 @@ resource "azurerm_postgresql_configuration" "log_retention_days" {
   name                = "log_retention_days"
   resource_group_name = var.resource_group_name
   server_name         = azurerm_postgresql_server.postgresql_server.name
-  value               = "3"
+  value               = "30"
 }
