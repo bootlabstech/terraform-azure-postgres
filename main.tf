@@ -8,7 +8,7 @@ resource "azurerm_postgresql_server" "postgresql_server" {
   version                           = var.postgresql_version
   storage_mb                        = var.storage_mb
   backup_retention_days             = 7
-  geo_redundant_backup_enabled      = true
+  geo_redundant_backup_enabled      = false
   auto_grow_enabled                 = true
   public_network_access_enabled     = false
   ssl_enforcement_enabled           = true
