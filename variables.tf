@@ -37,7 +37,41 @@ variable "postgresql_version" {
   type        = string
   description = "The version of the postgressql"
 }
-
+variable "backup_retention_days" {
+  type        = number
+  description = "backup_retention_days"
+  default     = 7
+}
+variable "geo_redundant_backup_enabled" {
+  type        = bool
+  description = "geo_redundant_backup_enabled"
+  default     = false
+}
+variable "auto_grow_enabled" {
+  type        = bool
+  description = "auto_grow_enabled"
+  default     = true
+}
+variable "public_network_access_enabled" {
+  type        = bool
+  description = "public_network_access_enabled"
+  default     = false
+}
+variable "ssl_enforcement_enabled" {
+  type        = bool
+  description = "ssl_enforcement_enabled"
+  default     = true
+}
+variable "ssl_minimal_tls_version_enforced" {
+  type        = string
+  description = "ssl_minimal_tls_version_enforced"
+  default     = "TLS1_2"
+}
+variable "infrastructure_encryption_enabled" {
+  type        = bool
+  description = "infrastructure_encryption_enabled"
+  default     = true
+}
 
 
 
