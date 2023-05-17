@@ -7,11 +7,9 @@ resource "azurerm_postgresql_server" "postgresql_server" {
   sku_name                          = var.sku_name
   version                           = var.postgresql_version
   storage_mb                        = var.storage_mb
-  backup_retention_days             = 7
-  geo_redundant_backup_enabled      = false
-  auto_grow_enabled                 = true
-  public_network_access_enabled     = false
-  ssl_enforcement_enabled           = true
-  ssl_minimal_tls_version_enforced  = "TLS1_2"
-  infrastructure_encryption_enabled = true
+  backup_retention_days             = var.backup_retention_days
+  geo_redundant_backup_enabled      = var.geo_redundant_backup_enabled
+  public_network_access_enabled     = var.public_network_access_enabled
+  ssl_enforcement_enabled           = var.ssl_enforcement_enabled
+  ssl_minimal_tls_version_enforced  = var.ssl_minimal_tls_version_enforced
 }
