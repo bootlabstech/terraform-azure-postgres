@@ -14,10 +14,10 @@ resource "azurerm_postgresql_server" "postgresql_server" {
   ssl_minimal_tls_version_enforced  = var.ssl_minimal_tls_version_enforced
 }
 
-resource "azurerm_postgresql_firewall_rule" "example" {
-  name                = "${var.name}-firewallrule"
-  resource_group_name = var.resource_group_name
-  server_name         = var.name
-  start_ip_address    = "0.0.0.0"
-  end_ip_address      = "0.0.0.0"
-}
+# resource "azurerm_postgresql_firewall_rule" "example" {
+#   name                = "${var.name}-firewallrule"
+#   resource_group_name = var.resource_group_name
+#   server_name         = var.name
+#   start_ip_address    = "0.0.0.0"
+#   end_ip_address      = "0.0.0.0"
+# }

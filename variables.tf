@@ -54,7 +54,7 @@ variable "geo_redundant_backup_enabled" {
 variable "public_network_access_enabled" {
   type        = bool
   description = "Name of the postgresql_server"
-  default = true
+  default = false
 }
 
 variable "ssl_enforcement_enabled" {
